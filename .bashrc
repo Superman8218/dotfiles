@@ -196,6 +196,7 @@ export VISUAL='emacs -nw'
 
 # 2.4) grep options
 export GREP_COLOR='1;31' # green for matches
+alias grep="grep --color=auto"
 
 # 2.5) sort options
 # Ensures cross-platform sorting behavior of GNU sort.
@@ -214,9 +215,15 @@ if [ -s ~/.nvm/nvm.sh ]; then
     nvm use v0.10.12 &> /dev/null # silence nvm use; needed for rsync
 fi
 
+# 2.8) Django controls
+alias pym="python manage.py"
+
 ## ------------------------------
 ## -- 3) User-customized code  --
 ## ------------------------------
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
