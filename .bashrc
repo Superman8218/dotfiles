@@ -195,8 +195,8 @@ export EDITOR='emacs -nw'
 export VISUAL='emacs -nw' 
 
 # 2.4) grep options
-export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;31' # green for matches
+alias grep="grep -n --color=auto"
 
 # 2.5) sort options
 # Ensures cross-platform sorting behavior of GNU sort.
@@ -225,3 +225,6 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+
+alias meta="cd C:/NetQuarry/Customers/FBO/Database/Metadata"
+
