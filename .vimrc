@@ -11,5 +11,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'scrooloose/syntastic'
+
+call vundle#end()
 
 :imap jj <Esc>
+
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
