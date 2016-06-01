@@ -139,21 +139,9 @@ if [ "$PS1" ]; then
     # define a bash function which escapes the string before writing it; if you
     # have a fix for that which doesn't slow the command down, please submit
     # a patch or pull request.
-    PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo -e $$\\t$USER\\t$HOSTNAME\\tscreen $WINDOW\\t`date +%D%t%T%t%Y%t%s`\\t$PWD"$(history 1)" >> ~/.bash_eternal_history'
+
 
     # Turn on checkwinsize
-    shopt -s checkwinsize
-
-    #Prompt edited from default
-    [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u \w]\\$ "
-
-    if [ "x$SHLVL" != "x1" ]; then # We're not a login shell
-        for i in /etc/profile.d/*.sh; do
-	    if [ -r "$i" ]; then
-	        . $i
-	    fi
-	done
-    fi
 fi
 
 # Append to history
@@ -196,7 +184,7 @@ export VISUAL='emacs -nw'
 
 # 2.4) grep options
 export GREP_COLOR='1;31' # green for matches
-alias grep="grep --color=auto"
+alias grep="grep -n --color=auto"
 
 # 2.5) sort options
 # Ensures cross-platform sorting behavior of GNU sort.
@@ -227,3 +215,8 @@ source ~/.bashrc_custom
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+alias meta="cd C:/NetQuarry/Customers/FBO/Database/Metadata"
+alias mapx="cd C:/NetQuarry/Customers/FBO/Source/MapperExts"
+
+stty erase '^?'
+set shell=/usr/local/bin/bash
