@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 
@@ -21,3 +22,4 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+:let mapleader = ","
