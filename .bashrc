@@ -150,7 +150,7 @@ shopt -s histappend
 
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
-PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
+PS1="\[\033[1;33m\][\u@\h:\w]$\[\033[0m\]"
 
 ## -----------------------
 ## -- 2) Set up aliases --
@@ -217,6 +217,10 @@ source ~/.bashrc_custom
 export PATH="/usr/local/heroku/bin:$PATH"
 alias meta="cd C:/NetQuarry/Customers/FBO/Database/Metadata"
 alias mapx="cd C:/NetQuarry/Customers/FBO/Source/MapperExts"
+alias templates="cd C:/NetQuarry/Source/WebHost/Templates/FBO"
+alias styles="cd C:/NetQuarry/Source/WebHost/Apps/FBO/Styles"
+alias less="cd C:/NetQuarry/Source/WebHost/Apps/FBO/less"
 
 stty erase '^?'
 set shell=/usr/local/bin/bash
+
