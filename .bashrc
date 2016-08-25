@@ -78,14 +78,9 @@ fi
 # See: http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 shopt -s histappend
 
-#Set the colors
 
-#The command prompt color
-PS1="\[\033[1;33m\][\u@\h:\w]$\[\033[0m\]"
 
-#The background
 
-#The color theme
 
 ## -----------------------
 ## -- 2) Set up aliases --
@@ -98,12 +93,16 @@ fi
 ## ------------------------------
 ## -- 3) User-customized code  --
 ## ------------------------------
-
-## Define any user-specific variables you want here.
-source ~/.bashrc_custom
-
 stty erase '^?'
 set shell=/usr/local/bin/bash
+
+# Maven Options
+
+#export MAVEN_OPTS="-Xmx4096m -XX:+UseParallelOldGC -XX:ParallelGCThreads=8"
+
+## ------------------------------
+## -- Terminal Appearance --
+## ------------------------------
 
 ## Colorize man pages
 
@@ -119,6 +118,10 @@ man() {
             man "$@"
 }
 
-# Maven Options
+## The command prompt color
 
-#export MAVEN_OPTS="-Xmx4096m -XX:+UseParallelOldGC -XX:ParallelGCThreads=8"
+PS1="\[\033[1;33m\][\u@\h:\w]$\[\033[0m\]"
+
+## Solarized Settings
+#export TERM="screen-256color"
+#alias tmux="tmux -2"

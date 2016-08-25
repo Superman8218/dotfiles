@@ -29,5 +29,7 @@ set nrformats=
 :let mapleader = ","
 
 "Colors
-set background=dark
-colorscheme solarized
+"set background=dark
+"set t_Co=256
+"let g:solarized_termcolors=256
+"colorscheme solarized

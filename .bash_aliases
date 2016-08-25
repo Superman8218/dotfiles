@@ -41,11 +41,11 @@ alias pym="python manage.py"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Other Aliases
-alias meta="cd C:/NetQuarry/Customers/FBO/Database/Metadata"
-alias mapx="cd C:/NetQuarry/Customers/FBO/Source/MapperExts"
-alias templates="cd C:/NetQuarry/Source/WebHost/Templates/FBO"
-alias styles="cd C:/NetQuarry/Source/WebHost/Apps/FBO/Styles"
-alias less="cd C:/NetQuarry/Source/WebHost/Apps/FBO/less"
+alias meta="cd /mnt/c/NetQuarry/Customers/FBO/Database/Metadata"
+alias mapx="cd /mnt/c/NetQuarry/Customers/FBO/Source/MapperExts"
+alias templates="cd /mnt/c/NetQuarry/Source/WebHost/Templates/FBO"
+alias styles="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/Styles"
+alias less="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/less"
 
 # Java Aliases
 alias c="mvn compile"
