@@ -33,3 +33,4 @@ set nrformats=
 "set t_Co=256
 "let g:solarized_termcolors=256
 "colorscheme solarized
+colorscheme elflord
