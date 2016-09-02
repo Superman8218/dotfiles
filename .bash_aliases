@@ -47,10 +47,11 @@ alias templates="cd /mnt/c/NetQuarry/Source/WebHost/Templates/FBO"
 alias styles="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/Styles"
 alias less="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/less"
 
-# Java Aliases
-alias c="mvn compile"
-alias p="mvn package"
-alias r="~/development/Java/run_with_arguments.sh"
-alias h="cd ~/development/pair"
-alias s="cd ~/development/pair/src/main/java/com/GumGum/app"
-alias t="cd ~/development/pair/src/test/java/com/GumGum/app"
+# Python Aliases
+
+alias virt="source venv/bin/activate"
+alias freeze="pip freeze"
+alias ph="git push heroku master"
+alias po="git push origin master"
+alias req="pip install -r requirements.txt"
+alias freezer="pip freeze >| requirements.txt"
