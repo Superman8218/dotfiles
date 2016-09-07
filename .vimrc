@@ -12,7 +12,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Bundle 'christoomey/vim-tmux-navigator'
-"Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/syntastic'
 " Configure Classpath
 "let g:syntastic_java_javac_classpath = "~/development/assignment/jars/jsoup-1.9.2.jar"
 Bundle 'scrooloose/nerdcommenter'
