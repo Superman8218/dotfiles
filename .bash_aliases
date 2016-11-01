@@ -59,3 +59,8 @@ alias todo="cat ~/development/emerald/to-do-list.txt"
 alias run="python manage.py runserver"
 alias db="psql emerald"
 alias debug="python -m pdb manage.py runserver"
+
+# SASS Aliases
+alias ss="sass sass/custom.scss static/emerald/custom.css"
+alias sw="sass --watch sass:static/emerald/"
+alias css="vim sass/custom.scss"
