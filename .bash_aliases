@@ -59,6 +59,7 @@ alias todo="cat ~/development/emerald/to-do-list.txt"
 alias run="python manage.py runserver"
 alias db="psql emerald"
 alias debug="python -m pdb manage.py runserver"
+alias tb="vim ~/development/emerald/venv/lib/python2.7/site-packages/django_tables2/templates/django_tables2/table.html"
 
 # SASS Aliases
 alias ss="sass sass/custom.scss static/emerald/custom.css"

@@ -127,3 +127,9 @@ PS1="\[\033[1;33m\][\u@\h:\w]$\[\033[0m\]"
 #alias tmux="tmux -2"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+## Go to development environment by default
+cd ~/development/emerald
+if ! { [ -n "$TMUX" ]; } then
+    tmux
+fi
