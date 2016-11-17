@@ -41,32 +41,33 @@ alias pym="python manage.py"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Other Aliases
-alias meta="cd /mnt/c/NetQuarry/Customers/FBO/Database/Metadata"
-alias mapx="cd /mnt/c/NetQuarry/Customers/FBO/Source/MapperExts"
-alias templates="cd /mnt/c/NetQuarry/Source/WebHost/Templates/FBO"
-alias styles="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/Styles"
 alias less="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/less"
+alias mapx="cd /mnt/c/NetQuarry/Customers/FBO/Source/MapperExts"
+alias meta="cd /mnt/c/NetQuarry/Customers/FBO/Database/Metadata"
+alias styles="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/Styles"
+alias templates="cd /mnt/c/NetQuarry/Source/WebHost/Templates/FBO"
 
 # Python Aliases
 
-alias virt="source venv/bin/activate"
+alias db="psql emerald"
+alias debug="python -m pdb manage.py runserver"
 alias freeze="pip freeze"
+alias freezer="pip freeze >| requirements.txt"
+alias fbi="./manage.py FboImport"
 alias ph="git push heroku master"
 alias po="git push origin master"
 alias req="pip install -r requirements.txt"
-alias freezer="pip freeze >| requirements.txt"
-alias todo="cat ~/development/emerald/to-do-list.txt"
 alias run="python manage.py runserver"
-alias db="psql emerald"
-alias debug="python -m pdb manage.py runserver"
 alias tb="vim ~/development/emerald/venv/lib/python2.7/site-packages/django_tables2/templates/django_tables2/table.html"
+alias todo="cat ~/development/emerald/to-do-list.txt"
+alias virt="source venv/bin/activate"
 
 # SASS Aliases
+alias css="vim sass/custom.scss"
 alias ss="sass sass/custom.scss static/emerald/custom.css"
 alias sw="sass --watch sass:static/emerald/"
-alias css="vim sass/custom.scss"
 
 # Moving Around
 alias dotfiles="cd ~/dotfiles"
-alias setup="cd ~/setup"
 alias emerald="cd ~/development/emerald"
+alias setup="cd ~/setup"
