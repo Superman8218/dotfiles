@@ -70,4 +70,11 @@ alias sw="sass --watch sass:static/emerald/"
 # Moving Around
 alias dotfiles="cd ~/dotfiles"
 alias emerald="cd ~/development/emerald"
+alias envs="cd $WORKON_HOME"
 alias setup="cd ~/setup"
+
+# Git Aliases
+
+alias gs="git status"
+alias ga="git add *"
+alias gc="git commit -m"

@@ -133,3 +133,8 @@ cd ~/development/emerald
 if ! { [ -n "$TMUX" ]; } then
     tmux
 fi
+
+## virtualenvwrapper
+
+export WORKON_HOME=~/envs
+source ~/.local/bin/virtualenvwrapper.sh
