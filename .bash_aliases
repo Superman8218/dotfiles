@@ -65,3 +65,8 @@ alias tb="vim ~/development/emerald/venv/lib/python2.7/site-packages/django_tabl
 alias ss="sass sass/custom.scss static/emerald/custom.css"
 alias sw="sass --watch sass:static/emerald/"
 alias css="vim sass/custom.scss"
+
+# Moving Around
+alias dotfiles="cd ~/dotfiles"
+alias setup="cd ~/setup"
+alias emerald="cd ~/development/emerald"

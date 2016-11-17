@@ -22,9 +22,9 @@ call vundle#end()
 :imap jj <Esc>
 
 filetype plugin indent on
-set tabstop=4
-set shiftwidth=4
-set expandtab
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
 set nrformats=
 :let mapleader = ","
 
