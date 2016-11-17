@@ -61,6 +61,8 @@ alias run="python manage.py runserver"
 alias tb="vim ~/development/emerald/venv/lib/python2.7/site-packages/django_tables2/templates/django_tables2/table.html"
 alias todo="cat ~/development/emerald/to-do-list.txt"
 alias virt="workon emerald"
+alias vde="vim ~/envs/emerald/bin/predeactivate"
+alias vpt="vim ~/envs/emerald/bin/postactivate"
 
 # SASS Aliases
 alias css="vim sass/custom.scss"
@@ -78,3 +80,12 @@ alias setup="cd ~/setup"
 alias gs="git status"
 alias ga="git add *"
 alias gc="git commit -m"
+
+# Vim shortcuts
+
+alias valias="vim ~/.bash_aliases"
+alias vbrc="vim ~/.bashrc"
+
+# Misc Aliases
+
+alias sbrc="source ~/.bashrc"
