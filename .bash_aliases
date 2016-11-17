@@ -60,7 +60,7 @@ alias req="pip install -r requirements.txt"
 alias run="python manage.py runserver"
 alias tb="vim ~/development/emerald/venv/lib/python2.7/site-packages/django_tables2/templates/django_tables2/table.html"
 alias todo="cat ~/development/emerald/to-do-list.txt"
-alias virt="source venv/bin/activate"
+alias virt="workon emerald"
 
 # SASS Aliases
 alias css="vim sass/custom.scss"
