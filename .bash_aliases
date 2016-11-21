@@ -40,7 +40,8 @@ alias pym="python manage.py"
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Other Aliases
+# Bidspeed Aliases
+
 alias less="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/less"
 alias mapx="cd /mnt/c/NetQuarry/Customers/FBO/Source/MapperExts"
 alias meta="cd /mnt/c/NetQuarry/Customers/FBO/Database/Metadata"
@@ -60,16 +61,15 @@ alias req="pip install -r requirements.txt"
 alias run="python manage.py runserver"
 alias tb="vim ~/development/emerald/venv/lib/python2.7/site-packages/django_tables2/templates/django_tables2/table.html"
 alias todo="cat ~/development/emerald/to-do-list.txt"
-alias virt="workon emerald"
-alias vde="vim ~/envs/emerald/bin/predeactivate"
-alias vpt="vim ~/envs/emerald/bin/postactivate"
 
 # SASS Aliases
+
 alias css="vim sass/custom.scss"
 alias ss="sass sass/custom.scss static/emerald/custom.css"
 alias sw="sass --watch sass:static/emerald/"
 
 # Moving Around
+
 alias dotfiles="cd ~/dotfiles"
 alias emerald="cd ~/development/emerald"
 alias envs="cd $WORKON_HOME"
@@ -81,10 +81,17 @@ alias gs="git status"
 alias ga="git add *"
 alias gc="git commit -m"
 
+# Virtual Environment Aliases
+
+alias da="deactivate"
+alias virt="workon emerald"
+
 # Vim shortcuts
 
 alias valias="vim ~/.bash_aliases"
 alias vbrc="vim ~/.bashrc"
+alias vde="vim ~/envs/emerald/bin/predeactivate"
+alias vpt="vim ~/envs/emerald/bin/postactivate"
 
 # Misc Aliases
 
