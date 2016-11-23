@@ -81,7 +81,6 @@ alias setup="cd ~/setup"
 alias gs="git status"
 alias ga="git add *"
 alias gc="git commit -m"
-alias push="./~/setup/push.sh"
 
 # Virtual Environment Aliases
 
