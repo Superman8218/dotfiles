@@ -22,7 +22,7 @@ alias treeacl='tree -A -C -L 2'
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
 export EDITOR='emacs -nw'
-export VISUAL='emacs -nw' 
+export VISUAL='emacs -nw'
 
 # 2.4) grep options
 export GREP_COLOR='1;31' # green for matches
@@ -81,6 +81,7 @@ alias setup="cd ~/setup"
 alias gs="git status"
 alias ga="git add *"
 alias gc="git commit -m"
+alias push="./~/setup/push.sh"
 
 # Virtual Environment Aliases
 
