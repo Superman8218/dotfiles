@@ -138,7 +138,10 @@ if [ -f ~/.local_settings ]; then
     . ~/.local_settings
 fi
 
-## virtualenvwrapper
+# virtualenvwrapper
 
 export WORKON_HOME=~/envs
 source $VIRTUALENVWRAPPERHOME
+
+# XResources
+xrdb ~/.Xresources

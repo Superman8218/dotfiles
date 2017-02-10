@@ -36,6 +36,7 @@ export LC_ALL=POSIX
 
 # 2.8) Django controls
 alias pym="python manage.py"
+alias shell="python manage.py shell"
 
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -60,12 +61,16 @@ alias po="git push origin master"
 alias req="pip install -r requirements.txt"
 alias run="python manage.py runserver"
 alias sami="python manage.py sam_import"
-alias tb="vim ~/development/emerald/venv/lib/python2.7/site-packages/django_tables2/templates/django_tables2/table.html"
+alias tables="cd ~/envs/emerald/lib/python2.7/site-packages/django_tables2"
 alias todo="cat ~/development/emerald/to-do-list.txt"
+
+# Emerald Aliases
+alias clrlog="rm -rf ~/development/emerald/logs/*"
+alias ca="cat ~/development/emerald/logs/errors.log"
 
 # SASS Aliases
 
-alias css="vim sass/custom.scss"
+alias css="vim ~/development/emerald/sass/custom.scss"
 alias ss="sass sass/custom.scss static/emerald/custom.css"
 alias sw="sass --watch sass:static/emerald/"
 
@@ -81,6 +86,7 @@ alias setup="cd ~/setup"
 alias gs="git status"
 alias ga="git add *"
 alias gc="git commit -m"
+alias gl="git log --abbrev-commit --pretty=oneline"
 
 # Virtual Environment Aliases
 

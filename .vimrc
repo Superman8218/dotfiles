@@ -21,11 +21,14 @@ let g:SimpylFold_docstring_preview=1
 "Remap escape key
 :imap jj <Esc>
 
+"Set tab to always be 4 spaces
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
 "Python indentation
 au BufNewFile,BufRead *.py:
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
     \ set textwidth=79
     \ set expandtab
     \ set autoindent
