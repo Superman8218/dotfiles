@@ -96,10 +96,7 @@ fi
 stty erase '^?'
 set shell=/usr/local/bin/bash
 
-# Maven Options
-
-#export MAVEN_OPTS="-Xmx4096m -XX:+UseParallelOldGC -XX:ParallelGCThreads=8"
-
+source ~/.envars
 ## ------------------------------
 ## -- Terminal Appearance --
 ## ------------------------------
