@@ -34,6 +34,9 @@ alias grep="grep -n --color=auto"
 unset LANG
 export LC_ALL=POSIX
 
+# Standard Directories
+alias home="cd ~"
+
 # 2.8) Django controls
 alias pym="python manage.py"
 alias shell="python manage.py shell"

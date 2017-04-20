@@ -142,3 +142,7 @@ source $VIRTUALENVWRAPPERHOME
 
 # XResources
 xrdb ~/.Xresources
+
+# Default Editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
