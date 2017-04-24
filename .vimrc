@@ -1,6 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+"UTF8 Support
+set encoding=utf-8
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -40,8 +43,6 @@ Plugin 'vim-scripts/indentpython.vim'
 "Extra whitespace
 Plugin 'bitc/vim-bad-whitespace'
 
-"UTF8 Support
-set encoding=utf-8
 
 "Auto-complete
 Bundle 'Valloric/YouCompleteMe'
@@ -57,7 +58,10 @@ Plugin 'scrooloose/syntastic'
 let python_highlight_all=1
 syntax on
 
+"Powerline
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+set t_Co=256
 "Formatting for web languages
 au BufNewFile,BufRead *.js, *.html, *.css:
     \ set tabstop=2
@@ -69,13 +73,16 @@ au BufNewFile,BufRead *.js, *.html, *.css:
 
 "Color
 Plugin 'jnurmine/Zenburn'
-colorscheme elflord
+"colorscheme elflord
+colorscheme grb256
+
+"Nerdtree
+Plugin 'scrooloose/nerdtree'
+
 
 "Line numbering
 set nu
 
-"Powerline
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 "Vim splits
 nnoremap <C-J> <C-W><C-J>

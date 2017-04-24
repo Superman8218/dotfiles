@@ -141,6 +141,7 @@ export WORKON_HOME=~/envs
 source $VIRTUALENVWRAPPERHOME
 
 # XResources
+urxvtd --quiet --fork
 xrdb ~/.Xresources
 
 # Default Editor

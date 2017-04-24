@@ -1,51 +1,99 @@
+Xft.hinting: true 
+Xft.hintstyle: hintfull 
+Xft.antialias: rgba 
+Xft.rgba: none
+Xft.dpi: 96
 
+Xcursor.theme: DMZ-Black
+Xcursor.size: 16
 
-! Xft resources
-Xft.antialias:true
-Xft.dpi:96
-Xft.hinting:true
-! hintslight | hintsmedium | hintsfull
-Xft.hintstyle:hintslight
-! rgba subpixel hinting (for LCDs)
-Xft.rgba:none
+#define r_bg   #000000
+#define r_fg   #aaaaaa
+#define r_hlfg #ffffff
 
-! Xterm resources
+! States: bg, fg, bgalt, hlbg, hlfg
+rofi.color-enabled: true
+rofi.color-normal: r_bg,r_fg,r_bg,r_bg,r_hlfg
+rofi.color-urgent: r_bg,#ffffff,r_bg,r_bg,r_hlfg
+rofi.color-active: r_bg,r_fg,#ffffff,r_bg,#ffffff
+! states: background, border
+rofi.color-window: r_bg,#ffffff
 
-! Xft font name style
-XTerm*faceName:Liberation Mono
-XTerm*faceSize:12
-xterm*locale: true
-xterm*termName: rxvt-256color
-xterm*inheritPixmap: False
-xterm*imLocale: en_US.UTF-8
-xterm*scrollBar: false
-xterm*saveLines: 5000
-xterm*urlLauncher: luakit
-xterm*perl-ext-common: default,matcher
-xterm*matcher.button: 2
-xterm*matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
-xterm*cursorBlink: true
-xterm*geometry: 120x25
-xterm*fading: 0%
-xterm*shading: 75
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.bw: 1
+rofi.columns: 1
+rofi.padding: 5
 
-*foreground: #EFEFDE
-*background: #262626
+rofi.yoffset: -300
+rofi.opacity: 80
+rofi.fake-transparency: true
+rofi.location: 0
+rofi.width: 30
+rofi.font: Inconsolata 12
+rofi.lines: 10
 
-*color0: #acd3d5
-*color1: #69a8a6
-*color2: #253854
-*color3: #244f68
-*color4: #85d4ca
-*color5: #2b5568
-*color6: #286785
-*color7: #549298
-*color8: #388bad
-*color9: #49b4d8
-*color10: #4e638d
-*color11: #205f7c
-*color12: #65c4d1
-*color13: #28a0ca
-*color14: #2379a1
-*color15: #51a0c1
+! special
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #cc00ff
 
+! black
+*.color0:       #1c1c1c
+*.color8:       #00d7ff
+
+! red
+*.color1:       #ff00ff
+*.color9:       #d700ff
+
+! green
+*.color2:       #00afaf
+*.color10:      #00afd7
+
+! yellow
+*.color3:       #0087af
+*.color11:      #5f5fff
+
+! blue
+*.color4:       #5f5faf
+*.color12:      #ff5fff
+
+! magenta
+*.color5:       #d75fff
+*.color13:      #00d7ff
+
+! cyan
+*.color6:       #00afff
+*.color14:      #00ffff
+
+! white
+*.color7:       #808080
+*.color15:      #ccffff
+
+! define different font params for various machines
+#ifdef SRVR_chromebook
+	#define urxvt_font_size 17
+	#define urxvt_letter_spacing -1
+#elif defined SRVR_baseline
+	#define urxvt_font_size 16
+	#define urxvt_letter_spacing -1
+#else
+	#define urxvt_font_size 15
+	#define urxvt_letter_spacing -2
+#endif
+
+! make it easy to change font in one place
+#define urxvt_font xft:Ubuntu Mono:pixelsize=urxvt_font_size
+#define urxvt_bold_font urxvt_font:style=Bold
+
+URxvt*font: urxvt_font
+URxvt*boldFont: urxvt_bold_font
+
+URxvt*allow_bold: true
+URxvt*letterSpace: urxvt_letter_spacing
+
+URxvt*buffered: false
+URxvt.transparent: true
+URxvt*shading: 15
+
+URxvt*scrollBar:     false

@@ -74,8 +74,8 @@ alias ca="cat ~/development/emerald/logs/errors.log"
 # SASS Aliases
 
 alias css="vim ~/development/emerald/sass/custom.scss"
-alias ss="sass sass/custom.scss static/emerald/custom.css"
-alias sw="sass --watch sass:static/emerald/"
+alias ss="sass sass/custom.scss static/emerald/css/custom.css"
+alias sw="sass --watch sass:static/emerald/css/"
 
 # Moving Around
 
@@ -104,5 +104,8 @@ alias vde="vim ~/envs/emerald/bin/predeactivate"
 alias vpt="vim ~/envs/emerald/bin/postactivate"
 
 # Misc Aliases
-
 alias sbrc="source ~/.bashrc"
+
+# Convenience
+alias dnf="sudo dnf"
+alias pip="sudo pip"
