@@ -142,7 +142,7 @@ source $VIRTUALENVWRAPPERHOME
 
 # XResources
 urxvtd --quiet --fork
-xrdb ~/.Xresources
+LC_ALL=C xrdb ~/.Xresources
 
 # Default Editor
 export VISUAL=vim
