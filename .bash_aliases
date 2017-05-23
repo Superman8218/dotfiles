@@ -98,6 +98,7 @@ alias virt="workon emerald"
 
 # Vim shortcuts
 
+alias v="vim"
 alias valias="vim ~/.bash_aliases"
 alias vbrc="vim ~/.bashrc"
 alias vde="vim ~/envs/emerald/bin/predeactivate"
@@ -105,7 +106,3 @@ alias vpt="vim ~/envs/emerald/bin/postactivate"
 
 # Misc Aliases
 alias sbrc="source ~/.bashrc"
-
-# Convenience
-alias dnf="sudo dnf"
-alias pip="sudo pip"

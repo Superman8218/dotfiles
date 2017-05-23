@@ -1,1 +1,1 @@
-export VIRTUALENVWRAPPERHOME=/usr/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPERHOME=/usr/local/bin/virtualenvwrapper.sh
