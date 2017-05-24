@@ -31,8 +31,8 @@ URxvt.allow_bold:           false
 
 ! Working
 !
-!URxvt*font: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=16
-!URxvt*boldfont: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=18
+URxvt*font: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=16
+URxvt*boldfont: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=18
 !URxvt*font: xft:Hack:pixelsize=16
 !URxvt*boldfont: xft:Hack:pixelsize=18
 
@@ -40,8 +40,8 @@ URxvt.allow_bold:           false
 
 !URxvt*font: xft:Inconsolata\ for\ Powerline:pixelsize=16
 !URxvt*boldfont: xft:Inconsolata\ for\ Powerline:pixelsize=18
-URxvt*font: xft:Terminess\ Powerline:pixelsize=14
-URxvt*boldfont: xft:Terminess\ Powerline:pixelsize=16
+!URxvt*font: xft:Terminess\ Powerline:pixelsize=14
+!URxvt*boldfont: xft:Terminess\ Powerline:pixelsize=16
 
 
 ! Fix font space
