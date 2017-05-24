@@ -106,3 +106,6 @@ alias vpt="vim ~/envs/emerald/bin/postactivate"
 
 # Misc Aliases
 alias sbrc="source ~/.bashrc"
+
+# OMZ Aliases
+alias omz="cd ~/.oh-my-zsh"

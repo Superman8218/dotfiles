@@ -80,7 +80,7 @@ man() {
 PS1="\[\033[1;33m\][\u@\h:\w]$\[\033[0m\]"
 
 ## Solarized Settings
-export TERM="rxvt-unicode-256color"
+export TERM="screen-256color"
 #alias tmux="tmux -2"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
