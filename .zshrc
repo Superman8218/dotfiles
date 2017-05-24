@@ -7,7 +7,8 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -82,3 +83,32 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 source ~/.bash_aliases
+
+# Environment variables
+source ~/.envars
+
+# Set everything up
+cd ~/development/emerald
+
+if ! { [ -n "$TMUX" ]; } then
+	tmux -u
+fi
+
+# virtualenvwrapper
+
+export WORKON_HOME=~/envs
+source $VIRTUALENVWRAPPERHOME
+
+# Xresource
+urxvtd --quiet --fork
+LC_ALL=C xrdb ~/.Xresources
+
+# Default Editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Set Default User
+export DEFAULT_USER="zac"

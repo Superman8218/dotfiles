@@ -101,11 +101,15 @@ alias virt="workon emerald"
 alias v="vim"
 alias valias="vim ~/.bash_aliases"
 alias vbrc="vim ~/.bashrc"
+alias vzrc="vim ~/.zshrc"
 alias vde="vim ~/envs/emerald/bin/predeactivate"
 alias vpt="vim ~/envs/emerald/bin/postactivate"
+alias vxb="vim ~/dotfiles/.Xresources"
 
 # Misc Aliases
 alias sbrc="source ~/.bashrc"
+alias zbrc="source ~/.zshrc"
+alias xb="xrdb ~/.Xresources"
 
 # OMZ Aliases
 alias omz="cd ~/.oh-my-zsh"

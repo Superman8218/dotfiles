@@ -28,24 +28,15 @@ URxvt.lineSpace:            0
 
 ! Fonts
 URxvt.allow_bold:           false
-
-! Working
-!
-!URxvt*font: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=16
-!URxvt*boldfont: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=18
-!URxvt*font: xft:Hack:pixelsize=16
-!URxvt*boldfont: xft:Hack:pixelsize=18
-
-! Not Working
-
-!URxvt*font: xft:Inconsolata\ for\ Powerline:pixelsize=16
-!URxvt*boldfont: xft:Inconsolata\ for\ Powerline:pixelsize=18
-URxvt*font: xft:Terminess\ Powerline:pixelsize=14
-URxvt*boldfont: xft:Terminess\ Powerline:pixelsize=16
-
+/* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+!URxvt*font: xft:Monospace:pixelsize=14
+!URxvt*font: xft:Terminus Powerline:pixelsize=14
+URxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*boldfont: xft:Terminus:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
 
 ! Fix font space
 URxvt*letterSpace: -1
+Urxvt.letterSpace: -1
 
 ! Scrollbar
 URxvt.scrollStyle:          rxvt

@@ -73,8 +73,8 @@ au BufNewFile,BufRead *.js, *.html, *.css:
 
 "Color
 Plugin 'jnurmine/Zenburn'
-"colorscheme elflord
-colorscheme grb256
+set background=dark
+colorscheme solarized
 
 "Nerdtree
 Plugin 'scrooloose/nerdtree'
@@ -99,3 +99,7 @@ set foldlevel=99
 nnoremap <space> za
 
 call vundle#end()
+
+" Powerline
+set rtp+=/usr/loca/lib/python2.7/dist-packages/powerline/bindings/vim/
+set laststatus=2
