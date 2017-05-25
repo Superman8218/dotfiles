@@ -51,6 +51,8 @@ alias mapx="cd /mnt/c/NetQuarry/Customers/FBO/Source/MapperExts"
 alias meta="cd /mnt/c/NetQuarry/Customers/FBO/Database/Metadata"
 alias styles="cd /mnt/c/NetQuarry/Source/WebHost/Apps/FBO/Styles"
 alias templates="cd /mnt/c/NetQuarry/Source/WebHost/Templates/FBO"
+alias download="cd /mnt/c/Users/Zac\ Yauney/Downloads"
+alias drive="cd /mnt/c/Users/Zac\ Yauney/Google\ Drive/"
 
 # Python Aliases
 
