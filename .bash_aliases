@@ -93,6 +93,7 @@ alias gs="git status"
 alias ga="git add *"
 alias gc="git commit -m"
 alias gl="git log --abbrev-commit --pretty=oneline"
+alias gd="git diff"
 
 # Virtual Environment Aliases
 

@@ -20,7 +20,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvtc
-bindsym $mod+Shift+Return exec firefox
+bindsym $mod+Shift+Return exec midori
 
 # wallpaper
 
