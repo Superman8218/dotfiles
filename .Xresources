@@ -31,17 +31,21 @@ URxvt.allow_bold:           false
 
 ! Working
 !
-URxvt*font: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=16
-URxvt*boldfont: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=18
-!URxvt*font: xft:Hack:pixelsize=16
-!URxvt*boldfont: xft:Hack:pixelsize=18
+!URxvt*font: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=16
+!URxvt*boldfont: xft:Source\ Code\ Pro\ For\ Powerline:pixelsize=18
+URxvt*font: xft:Hack:pixelsize=16
+URxvt*boldfont: xft:Hack:pixelsize=18
 
 ! Not Working
 
 !URxvt*font: xft:Inconsolata\ for\ Powerline:pixelsize=16
 !URxvt*boldfont: xft:Inconsolata\ for\ Powerline:pixelsize=18
-!URxvt*font: xft:Terminess\ Powerline:pixelsize=14
-!URxvt*boldfont: xft:Terminess\ Powerline:pixelsize=16
+!URxvt*font: xft:Terminess\ Powerline:pixelsize=16
+!URxvt*boldfont: xft:Terminess\ Powerline:pixelsize=18
+!URxvt*font: xft:xos4\ Terminess\ Powerline:pixelsize=16
+!URxvt*boldfont: xft:xos4\ Terminess\ Powerline:pixelsize=18
+!URxvt*font: xft:terminus-font-4.40:pixelsize=26
+!URxvt*boldfont: xft:terminus-font-4.40:pixelsize=20
 
 
 ! Fix font space
