@@ -1,9 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
 "UTF8 Support
 set encoding=utf-8
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -11,24 +9,43 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'christoomey/vim-tmux-navigator'
-
-" Configure Classpath
-"let g:syntastic_java_javac_classpath = "~/development/assignment/jars/jsoup-1.9.2.jar"
-Bundle 'scrooloose/nerdcommenter'
-
-"Code folding
+" Plugins
+Plugin 'jnurmine/Zenburn'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'nvie/vim-flake8'
+Plugin 'scrooloose/syntastic'
+Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'tmhedberg/SimpylFold'
-let g:SimpylFold_docstring_preview=1
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'bitc/vim-bad-whitespace'
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-surround'
+Plugin 'lokaltog/vim-easymotion'
+Plugin 'sirver/ultisnips'
+Plugin 'rstacruz/sparkup'
+Plugin 'ervandew/supertab'
+Plugin 'honza/vim-snippets'
 
-"Remap escape key
+call vundle#end()
+
+set clipboard=unnamedplus
+
 :imap jj <Esc>
 
-"Set tab to always be 4 spaces
+:let mapleader = ","
 
+"Set tab to always be 4 spaces
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
+"Color
+set t_Co=256
+set background=dark
+colorscheme solarized
 
 "Python indentation
 au BufNewFile,BufRead *.py:
@@ -36,53 +53,21 @@ au BufNewFile,BufRead *.py:
     \ set expandtab
     \ set autoindent
     \ set fileformat=unix
-set nrformats=
 filetype plugin indent on
-Plugin 'vim-scripts/indentpython.vim'
-
-"Extra whitespace
-Plugin 'bitc/vim-bad-whitespace'
-
-
-"Auto-complete
-Bundle 'Valloric/YouCompleteMe'
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-"python with virtualenv support
-Plugin 'jmcantrell/vim-virtualenv'
 
 "Syntax checking/highlighting
-Plugin 'nvie/vim-flake8'
-Plugin 'scrooloose/syntastic'
 let python_highlight_all=1
 syntax on
 
-"Powerline
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-set t_Co=256
 "Formatting for web languages
 au BufNewFile,BufRead *.js, *.html, *.css:
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
 
-"Set mapleader
-:let mapleader = ","
-
-"Color
-Plugin 'jnurmine/Zenburn'
-set background=dark
-colorscheme solarized
-
-"Nerdtree
-Plugin 'scrooloose/nerdtree'
-
 
 "Line numbering
 set nu
-
 
 "Vim splits
 nnoremap <C-J> <C-W><C-J>
@@ -97,9 +82,3 @@ set foldmethod=indent
 set foldlevel=99
 "Folding with spacebar
 nnoremap <space> za
-
-call vundle#end()
-
-" Powerline
-set rtp+=/usr/loca/lib/python2.7/dist-packages/powerline/bindings/vim/
-set laststatus=2
