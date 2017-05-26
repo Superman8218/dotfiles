@@ -82,10 +82,10 @@ alias sw="sass --watch sass:static/emerald/css/"
 
 # Moving Around
 
-alias dotfiles="cd ~/dotfiles"
-alias emerald="cd ~/development/emerald"
+alias dot="cd ~/dotfiles"
+alias em="cd ~/development/emerald"
 alias envs="cd $WORKON_HOME"
-alias setup="cd ~/setup"
+alias st="cd ~/setup"
 
 # Git Aliases
 
@@ -114,6 +114,7 @@ alias vxb="vim ~/dotfiles/.Xresources"
 alias sbrc="source ~/.bashrc"
 alias zbrc="source ~/.zshrc"
 alias xb="xrdb ~/.Xresources"
+alias rng="ranger"
 
 # OMZ Aliases
 alias omz="cd ~/.oh-my-zsh"

@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/zac/development/emerald/templates/emerald'
+let g:netrw_dirhist_2='/home/zac/development/emerald/static'
+let g:netrw_dirhist_3='/home/zac/.vim/colors'
+let g:netrw_dirhist_4='/home/zac/.vim'
+let g:netrw_dirhist_5='/home/zac/dotfiles'
+let g:netrw_dirhist_6='/home/zac/development/emerald/data'
+let g:netrw_dirhist_7='/home/zac/development/emerald/emerald'
+let g:netrw_dirhist_8='/home/zac/development/emerald/templates/emerald'
+let g:netrw_dirhist_9='/home/zac/development/emerald/data/management/commands'
