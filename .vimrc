@@ -28,12 +28,13 @@ Plugin 'sirver/ultisnips'
 Plugin 'rstacruz/sparkup'
 Plugin 'ervandew/supertab'
 Plugin 'honza/vim-snippets'
+Plugin 'wikitopian/hardmode'
 
 call vundle#end()
 
 set clipboard=unnamedplus
 
-:imap jj <Esc>
+:imap jk <Esc>
 
 :let mapleader = ","
 

@@ -105,16 +105,20 @@ alias virt="workon emerald"
 alias v="vim"
 alias valias="vim ~/.bash_aliases"
 alias vbrc="vim ~/.bashrc"
-alias vzrc="vim ~/.zshrc"
+alias vz="vim ~/.zshrc"
 alias vde="vim ~/envs/emerald/bin/predeactivate"
 alias vpt="vim ~/envs/emerald/bin/postactivate"
 alias vxb="vim ~/dotfiles/.Xresources"
+alias vv="vim ~/.vimrc"
+alias vf="cd ~/.vim"
 
 # Misc Aliases
 alias sbrc="source ~/.bashrc"
 alias zbrc="source ~/.zshrc"
 alias xb="xrdb ~/.Xresources"
 alias rng="ranger"
+alias change_keyboard="sudo dpkg-reconfigure keyboard-configuration"
+alias urxvt="urxvt -pixmap 'find /home/zac/dotfiles/images/Generation II - Johto -name '249.png'"
 
 # OMZ Aliases
 alias omz="cd ~/.oh-my-zsh"
