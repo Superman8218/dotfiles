@@ -122,3 +122,7 @@ alias urxvt="urxvt -pixmap 'find /home/zac/dotfiles/images/Generation II - Johto
 
 # OMZ Aliases
 alias omz="cd ~/.oh-my-zsh"
+
+# Family History
+alias vf="workon fh"
+alias fh="cd ~/development/fh17"
