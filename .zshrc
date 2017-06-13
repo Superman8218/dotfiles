@@ -110,5 +110,8 @@ export EDITOR="$VISUAL"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+urxvtd --quiet --fork
+LC_ALL=C xrdb ~/.Xresources
+
 # Set Default User
 export DEFAULT_USER="zac"
