@@ -100,8 +100,8 @@ export WORKON_HOME=~/envs
 source $VIRTUALENVWRAPPERHOME
 
 # Xresource
-urxvtd --quiet --fork
-LC_ALL=C xrdb ~/.Xresources
+#urxvtd --quiet --fork
+#LC_ALL=C xrdb ~/.Xresources
 
 # Default Editor
 export VISUAL=vim
